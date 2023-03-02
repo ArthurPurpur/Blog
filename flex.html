@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 50px auto;
+
+            display: flex;
+
+            flex-direction: column;
+            flex-direction: column-reverse;
+            /* flex-direction: row-reverse; */
+             flex-direction: row; 
+             flex-direction: column;
+
+            /* расстояния вокруг флексов вдоль напавления  */
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            
+
+            /* расстояния вокруг флексов поперек напавления  */
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+            align-items: stretch;
+        }
+        .flex-elem{
+            background: rgb(185, 3, 3);
+            /* width: 50px; */
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class ="flex-container" >
+    <div class="flex-elem">1</div>
+    <div class="flex-elem">2</div>
+    <div class="flex-elem">3</div>
+    <div class="flex-elem">4</div>
+    <div class="flex-elem">5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Home</title>
+</head>
+
+<body class="d-flex flex-column justify-content-between mvh-100">
+
+    <header class="d-flex justify-content-between plr-20 align-items-center mh-80 header">
+        <div><a href="../Index.html"><img src="../images/tree-736885__480.jpg" alt="" class="logo"></a></div>
+        <nav>
+            <ul class="d-flex gap-40">
+                <li><a href="../Index.html" class="nav-link active">Home</a></li>
+                <li><a href="" class="nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+        <form action="" class="h-40 d-flex gap-10 form-search">
+            <input type="search" name="search" placeholder="Search..." class="form-search__search">
+            <button type="submit" class="btn">Search</button>
+        </form>
+
+    </header>
+    <div class="container">
+        <form action="" class="form-contact">
+            <h1 class="title">Form contacts</h1>
+            <div class="mb-15 form-contact__data d-flex flex-column gap-10">
+                <input type="text" name="username" placeholder="your name..." required>
+                <input type="number" name="userage" placeholder="your age..." min="6" max="115">
+                <input type="email" name="users-mail" placeholder="your E-mail..."required>
+                <input type="password" name="users-password" placeholder="your pin..."required>
+            </div>
+            <div class="mb-15">
+                <label for="">choose your favorite car color:</label>
+                <input type="color" name="car-color">
+            </div>
+            <div class="mb-15">
+                <label for="">choose a date:</label>
+                <input type="date" name="car-date">
+            </div>
+            <div class="mb-15">
+                <label for="">choose a photo</label>
+                <input type="file" name="photo-photo">
+            </div>
+            <div class="mb-15">
+                <b>choose your favorite mark:</b>
+                <br>
+                <label for="hyundai">Hyundai</label>
+                <input type="checkbox" name="mark" value="Hyundai" id="hyundai">
+                <label for="lamborghini">Lamborghini</label>
+                <input type="checkbox" name="mark" value="Lamborghini" id="lamborghini">
+                <label for="anything-else">anything else</label>
+                <input type="checkbox" name="mark" value="anything-else" id="anything-else">
+            </div>
+            <div class="mb-15">
+                <b>choose car type:</b>
+                <label for="crossover">crossover</label>
+                <input type="radio" name="car-type" id="crossover">
+                <label for="universal">universal</label>
+                <input type="radio" name="car-type" id="universal">
+                <label for="sidan">sidan</label>
+                <input type="radio" name="car-type" id="sidan">
+            </div>
+            <div class="mb-15">
+                <textarea name="coments"placeholder="comants..." class="form-contact__coments"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-succes">send</button>
+                <button type="reset" class="btn btn-danger">clear</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="d-flex align-items-center mh-80 justify-content-center bg-dark text-color-light">
+        <p>
+            I've copyrights!!!
+        </p>
+    </footer>
+</body>
+
+</html>
